@@ -61,5 +61,3 @@ function sendWhatsappMessage2(){
         })
         .then(message => console.log(message.sid))
     }
-
-setInterval(checkAvailablity,6000)
