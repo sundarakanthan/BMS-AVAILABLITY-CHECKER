@@ -1,8 +1,10 @@
 const twilio = require('twilio');
 const playwright = require('playwright')
-const accountSid = 'AC60a13e697fe18f983c03a73c016b7a28';
-const authToken = '63f12fe4ecb5458427770f2743e85514';
+const accountSid = process.env.ACCOUNT_SID;
+const authToken = process.env.AUTH_TOKEN;
 const client = require('twilio')(accountSid, authToken);
+require('dotenv').config();
+
 
 const { chromium } = require('playwright');
 
